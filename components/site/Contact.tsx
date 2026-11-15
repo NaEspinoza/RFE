@@ -1,4 +1,5 @@
-import { Instagram, MapPin, MessageCircle } from 'lucide-react'
+import { MapPin, MessageCircle } from 'lucide-react'
+import { InstagramIcon } from './InstagramIcon'
 import type { SiteSettings } from '@/sanity/lib/types'
 
 export function Contact({ settings }: { settings: SiteSettings }) {
@@ -23,7 +24,7 @@ export function Contact({ settings }: { settings: SiteSettings }) {
             <span><small>Encontranos en</small><strong>{settings.direccion}</strong><em>Cómo llegar ↗</em></span>
           </a>
           <a className="contact-detail" href={settings.instagramUrl} target="_blank" rel="noreferrer">
-            <span className="contact-icon"><Instagram size={19} /></span>
+            <span className="contact-icon"><InstagramIcon size={19} /></span>
             <span><small>Seguinos en Instagram</small><strong>@rocio.freitesestetica</strong><em>Ver perfil ↗</em></span>
           </a>
           <div className="contact-hours"><span className="hours-dot" /> Consultá horarios y disponibilidad por WhatsApp.</div>

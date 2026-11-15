@@ -1,4 +1,5 @@
-import { Instagram, MessageCircle, ArrowUpRight } from 'lucide-react'
+import { MessageCircle, ArrowUpRight } from 'lucide-react'
+import { InstagramIcon } from './InstagramIcon'
 import type { SiteSettings } from '@/sanity/lib/types'
 
 export function Footer({ settings }: { settings: SiteSettings }) {
@@ -11,7 +12,7 @@ export function Footer({ settings }: { settings: SiteSettings }) {
         </a>
         <p className="footer-message">{settings.footerTexto}</p>
         <div className="footer-socials">
-          <a href={settings.instagramUrl} target="_blank" rel="noreferrer" aria-label="Instagram"><Instagram size={18} /></a>
+          <a href={settings.instagramUrl} target="_blank" rel="noreferrer" aria-label="Instagram"><InstagramIcon size={18} /></a>
           <a href={`https://wa.me/${settings.whatsapp}`} target="_blank" rel="noreferrer" aria-label="WhatsApp"><MessageCircle size={18} /></a>
         </div>
       </div>
