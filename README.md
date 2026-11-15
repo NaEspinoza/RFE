@@ -12,7 +12,7 @@ Landing catálogo para el salón de estética Rocío Freites. Frontend Next.js c
 ## 1. Requisitos
 
 - Node.js 22.12 o superior (el proyecto fija 22.16.0 en `.nvmrc`)
-- pnpm 10
+- pnpm 11 o superior (configuración en `pnpm-workspace.yaml`)
 - Cuenta de Sanity y un proyecto creado
 - Cuenta de Cloudflare
 
@@ -78,7 +78,7 @@ El catálogo local inicial está en `content/fallback-servicios.ts`. Se utiliza 
 Con el proyecto configurado y las variables de entorno cargadas, asegurate de que exista el dataset público `production` (si no existe: `npx sanity@latest datasets create production --visibility public`). Después importá los documentos iniciales:
 
 ```bash
-npx sanity@latest datasets import content/servicios-iniciales.ndjson production
+npx sanity@latest datasets import content/servicios-iniciales.ndjson --dataset production
 ```
 
 Esto crea la configuración singleton y los 38 servicios iniciales. Después podés abrir el Studio y editar los textos, precios, imágenes y visibilidad. Las categorías admitidas son:

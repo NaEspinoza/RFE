@@ -1,11 +1,9 @@
 import { defineField, defineType } from 'sanity'
-import { TagIcon } from '@sanity/icons'
 
 export const servicio = defineType({
   name: 'servicio',
   title: 'Servicios',
   type: 'document',
-  icon: TagIcon,
   orderings: [{ title: 'Orden de visualización', name: 'ordenAsc', by: [{ field: 'orden', direction: 'asc' }] }],
   fields: [
     defineField({ name: 'nombre', title: 'Nombre del servicio', type: 'string', validation: (Rule) => Rule.required() }),

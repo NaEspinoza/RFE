@@ -1,3 +1,6 @@
 allowBuilds:
   esbuild: true
   msw: false
+nodeLinker: hoisted
+overrides:
+  hono: 4.12.25
