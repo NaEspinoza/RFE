@@ -19,7 +19,7 @@ export function Footer({ settings }: { settings: SiteSettings }) {
       <div className="footer-bottom section-shell">
         <span>© {new Date().getFullYear()} {settings.nombreMarca}. Todos los derechos reservados.</span>
         <a href="#inicio">Volver arriba <ArrowUpRight size={14} /></a>
-        <span className="footer-credit">Hecho con cuidado ♡</span>
+        <a className="footer-credit" href="https://aitria.ai" target="_blank" rel="noreferrer">Developed by Aitria</a>
       </div>
     </footer>
   )

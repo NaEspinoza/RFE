@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <rect width="180" height="180" rx="42" fill="#f8efec"/>
+  <circle cx="90" cy="90" r="69" fill="none" stroke="#b77e83" stroke-width="2"/>
+  <path d="M90 19c8 12 10 19 0 29-10-10-8-17 0-29Z" fill="#d5a8a5"/>
+  <text x="90" y="111" text-anchor="middle" fill="#8e6267" font-family="Georgia,serif" font-style="italic" font-size="68" letter-spacing="-11">RF</text>
+  <path d="M48 126h84" stroke="#b77e83" stroke-width="1.5"/>
+  <text x="90" y="143" text-anchor="middle" fill="#8e6267" font-family="Arial,sans-serif" font-size="8" letter-spacing="2.8">BELLEZA Y MÁS</text>
+</svg>

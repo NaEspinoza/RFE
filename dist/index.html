@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" name="viewport"/><meta content="noindex" name="robots"/><meta content="same-origin" name="referrer"/><link href="/static/favicon.ico" rel="icon" sizes="any"/><link href="/static/favicon.svg" rel="icon" type="image/svg+xml"/><link href="/static/apple-touch-icon.png" rel="apple-touch-icon"/><link href="/static/manifest.webmanifest" rel="manifest"/><title>Sanity Studio</title><script>
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"><meta content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" name="viewport"><meta content="noindex" name="robots"><meta content="same-origin" name="referrer"><link href="/static/favicon.ico" rel="icon" sizes="any"><link href="/static/favicon.svg" rel="icon" type="image/svg+xml"><link href="/static/apple-touch-icon.png" rel="apple-touch-icon"><link href="/static/manifest.webmanifest" rel="manifest"><title>Sanity Studio</title><script>
 ;(function () {
   var _caughtErrors = []
 
@@ -267,8 +267,43 @@
     margin: 0;
     -webkit-font-smoothing: antialiased;
   }
-</style><script src="https://core.sanity-cdn.com/bridge.js" async type="module" data-sanity-core></script>
-</head><body><div id="sanity"></div><script src="/static/sanity-DGhFEOTN.js" type="module"></script><noscript><div class="sanity-app-no-js__root"><div class="sanity-app-no-js__content"><style type="text/css">
+</style><script type="application/json" id="__imports">{"imports":{"react-dom/client":"/vendor/react-dom/client-DcmtgSVu.mjs","react-dom/server":"/vendor/react-dom/server-DrjoczNA.mjs","react-dom/static":"/vendor/react-dom/static-rxNtv28M.mjs","react-dom":"/vendor/react-dom/index-ennL3JGf.mjs","react-dom/package.json":"/vendor/react-dom/package.json-dBiGJjaE.mjs","react/compiler-runtime":"/vendor/react/compiler-runtime-CXBqGlQN.mjs","react/jsx-dev-runtime":"/vendor/react/jsx-dev-runtime-DYLplPiq.mjs","react/jsx-runtime":"/vendor/react/jsx-runtime-CInpRuN4.mjs","react":"/vendor/react/index-Ckb3TZ4z.mjs","react/package.json":"/vendor/react/package.json-1gNiVLdt.mjs","styled-components":"/vendor/styled-components/index-DzRprwTJ.mjs","styled-components/package.json":"/vendor/styled-components/package.json-BUmXtwT_.mjs","react-dom/server.browser":"/vendor/react-dom/server.browser-D3vCObJL.mjs","react-dom/static.browser":"/vendor/react-dom/static.browser-BV-0Lrd0.mjs","sanity":"https://sanity-cdn.com/v1/modules/by-app/xykt4jzka5stpryvy9bf8cdm/t1794768257/%5E5.31.2/sanity","sanity/":"https://sanity-cdn.com/v1/modules/by-app/xykt4jzka5stpryvy9bf8cdm/t1794768257/%5E5.31.2/sanity/","@sanity/vision":"https://sanity-cdn.com/v1/modules/by-app/xykt4jzka5stpryvy9bf8cdm/t1794768257/%5E5.31.2/@sanity__vision","@sanity/vision/":"https://sanity-cdn.com/v1/modules/by-app/xykt4jzka5stpryvy9bf8cdm/t1794768257/%5E5.31.2/@sanity__vision/"},"css":["https://sanity-cdn.com/v1/modules/by-app/xykt4jzka5stpryvy9bf8cdm/t1794768257/%5E5.31.2/sanity/index.css","https://sanity-cdn.com/v1/modules/by-app/xykt4jzka5stpryvy9bf8cdm/t1794768257/%5E5.31.2/@sanity__vision/index.css"]}</script><script>
+  // auto-generated script to add import map with timestamp
+  const importsJson = document.getElementById('__imports')?.textContent;
+  const { imports = {}, css = [], ...rest } = importsJson ? JSON.parse(importsJson) : {};
+  const importMapEl = document.createElement('script');
+  importMapEl.type = 'importmap';
+  const newTimestamp = `/t${Math.floor(Date.now() / 1000)}`;
+
+  function replaceTimestamp(urlStr) {
+    try {
+      const url = new URL(urlStr);
+      if (/^sanity-cdn\.[a-zA-Z]+$/.test(url.hostname)) {
+        url.pathname = url.pathname.replace(/\/t\d+/, newTimestamp);
+      }
+      return url.toString();
+    } catch {
+      return urlStr;
+    }
+  }
+
+  importMapEl.textContent = JSON.stringify({
+    imports: Object.fromEntries(
+      Object.entries(imports).map(([specifier, path]) => [specifier, replaceTimestamp(path)])
+    ),
+    ...rest,
+  });
+  document.head.appendChild(importMapEl);
+
+  // Creates <link rel="stylesheet"> tags with fresh timestamps.
+  for (const cssUrl of css) {
+    const linkEl = document.createElement('link');
+    linkEl.rel = 'stylesheet';
+    linkEl.href = replaceTimestamp(cssUrl);
+    document.head.appendChild(linkEl);
+  }
+</script><script src="https://core.sanity-cdn.com/bridge.js" async type="module" data-sanity-core></script>
+</head><body><div id="sanity"></div><script src="/static/sanity-BHHDOAiT.js" type="module"></script><noscript><div class="sanity-app-no-js__root"><div class="sanity-app-no-js__content"><style type="text/css">
 .sanity-app-no-js__root {
   position: absolute;
   top: 0;
