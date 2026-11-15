@@ -1,0 +1,226 @@
+[
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "nombre",
+        "type": "string",
+        "title": "Nombre del servicio"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "Manicuría",
+              "value": "manicuria"
+            },
+            {
+              "title": "Tratamientos faciales",
+              "value": "tratamientos-faciales"
+            },
+            {
+              "title": "Masajes",
+              "value": "masajes"
+            },
+            {
+              "title": "Depilación definitiva",
+              "value": "depilacion-definitiva"
+            },
+            {
+              "title": "Podología",
+              "value": "podologia"
+            }
+          ],
+          "layout": "dropdown"
+        },
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "valid",
+                "constraint": [
+                  "manicuria",
+                  "tratamientos-faciales",
+                  "masajes",
+                  "depilacion-definitiva",
+                  "podologia"
+                ]
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "categoria",
+        "type": "string",
+        "title": "Categoría"
+      },
+      {
+        "rows": 3,
+        "name": "descripcion",
+        "type": "text",
+        "title": "Descripción"
+      },
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "min",
+                "constraint": 0
+              }
+            ]
+          }
+        ],
+        "name": "precio",
+        "type": "number",
+        "title": "Precio (ARS)"
+      },
+      {
+        "description": "Ej.: 4 sesiones, adicional o Consultar.",
+        "name": "precioTexto",
+        "type": "string",
+        "title": "Aclaración del precio"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "name": "imagen",
+        "type": "image"
+      },
+      {
+        "initialValue": false,
+        "name": "destacado",
+        "type": "boolean",
+        "title": "Destacar en el catálogo"
+      },
+      {
+        "initialValue": 100,
+        "name": "orden",
+        "type": "number",
+        "title": "Orden de visualización"
+      },
+      {
+        "initialValue": true,
+        "name": "activo",
+        "type": "boolean",
+        "title": "Mostrar en la web"
+      }
+    ],
+    "name": "servicio",
+    "type": "document",
+    "title": "Servicios"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ]
+          }
+        ],
+        "name": "nombreMarca",
+        "type": "string",
+        "title": "Nombre de marca"
+      },
+      {
+        "name": "subtituloMarca",
+        "type": "string",
+        "title": "Bajada de marca"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "name": "logo",
+        "type": "image",
+        "title": "Logo (opcional)"
+      },
+      {
+        "description": "Con código de país, sin + ni espacios. Ej.: 5492614686890.",
+        "name": "whatsapp",
+        "type": "string",
+        "title": "WhatsApp"
+      },
+      {
+        "rows": 2,
+        "name": "direccion",
+        "type": "text",
+        "title": "Dirección"
+      },
+      {
+        "validation": [
+          {
+            "level": "error",
+            "rules": [
+              {
+                "flag": "uri",
+                "constraint": {
+                  "options": {
+                    "scheme": [
+                      "/^http$/",
+                      "/^https$/"
+                    ],
+                    "allowRelative": false,
+                    "relativeOnly": false,
+                    "allowCredentials": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "name": "instagramUrl",
+        "type": "url",
+        "title": "Instagram"
+      },
+      {
+        "name": "heroTitulo",
+        "type": "string",
+        "title": "Título principal"
+      },
+      {
+        "rows": 3,
+        "name": "heroSubtitulo",
+        "type": "text",
+        "title": "Bajada principal"
+      },
+      {
+        "rows": 4,
+        "name": "sobreTexto",
+        "type": "text",
+        "title": "Texto de presentación"
+      },
+      {
+        "rows": 2,
+        "name": "footerTexto",
+        "type": "text",
+        "title": "Texto del pie de página"
+      }
+    ],
+    "name": "siteSettings",
+    "type": "document",
+    "title": "Configuración del sitio"
+  }
+]

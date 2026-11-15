@@ -1,11 +1,9 @@
 import { defineField, defineType } from 'sanity'
-import { CogIcon } from '@sanity/icons'
 
 export const siteSettings = defineType({
   name: 'siteSettings',
   title: 'Configuración del sitio',
   type: 'document',
-  icon: CogIcon,
   fields: [
     defineField({ name: 'nombreMarca', title: 'Nombre de marca', type: 'string', validation: (Rule) => Rule.required() }),
     defineField({ name: 'subtituloMarca', title: 'Bajada de marca', type: 'string' }),
